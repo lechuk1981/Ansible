@@ -5,5 +5,10 @@
         ansible_connection: docker
   deb:
     hosts:
-      ubuntu:
+      centos8:
         ansible_connection: docker
+     
+  locals:
+    hosts:
+      local:
+        ansible_connection: ansible.builtin.local
